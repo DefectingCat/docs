@@ -34,6 +34,13 @@ const config: Config = {
       'classic',
       {
         docs: {
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '1.0.0',
+              path: '1.0.0',
+            },
+          },
           /* routeBasePath: '/', */
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
@@ -72,6 +79,10 @@ const config: Config = {
           label: 'Tutorial',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/DefectingCat',
           label: 'GitHub',
